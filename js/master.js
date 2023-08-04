@@ -67,7 +67,7 @@ function startGameTimer(time) {
 }
 function handleGameOver() {
   let gameOverSound = document.getElementById("gameover");
-  console.log("inside game over function");
+
   if (
     document.querySelectorAll(".game-block.match").length !== allCards.length
   ) {
@@ -90,7 +90,6 @@ function handleGameOver() {
 }
 function handleGameWin() {
   let winSound = document.getElementById("win");
-  console.log("inside game win function");
   if (
     document.querySelectorAll(".game-block.match").length === allCards.length
   ) {
@@ -133,7 +132,6 @@ function checkIdenticalCards(card1, card2) {
       card2.classList.remove("flipped");
       notMatchedSound.play();
       toggleInteraction(true);
-      console.log(" Not Equal");
     }, 1000);
   } else {
     // Identical
