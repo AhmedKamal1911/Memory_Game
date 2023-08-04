@@ -11,7 +11,7 @@ allCards.forEach((card) => {
   card.style.order = randomNumber;
 });
 //
-let gameTime = 3;
+let gameTime = 70;
 let gameTimerInterval;
 const mediaQuery = window.matchMedia("(max-width: 767px)");
 if (mediaQuery.matches) {
