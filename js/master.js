@@ -95,6 +95,16 @@ function handleGameWin() {
   ) {
     // Stop Time
     clearInterval(gameTimerInterval);
+    // Create Win Div
+    let winDiv = document.createElement("div");
+    winDiv.classList.add("game-win");
+    winDiv.innerHTML = "يبن اللعيبة";
+    document.body.appendChild(winDiv);
+
+    // Create Overlay
+    let winOverlay = document.createElement("div");
+    winOverlay.classList.add("win-overlay");
+    document.body.appendChild(winOverlay);
     // Show Win Modal / Play win sound
     winSound.play();
   }
